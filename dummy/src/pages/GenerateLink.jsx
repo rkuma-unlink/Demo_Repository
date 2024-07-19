@@ -58,7 +58,7 @@ const GenerateLink = () => {
   const [showApiKey, setShowApiKey] = useState(false);
   const [showEncodeButton, setShowEncodeButton] = useState(true);
   const [liveApiKey, setLiveApiKey] = useState(
-    Buffer.from("R2V0dEdjRTI4OElfc3RZRkU2MUw5V01wQWp6VWhEUWg6").toString(
+    Buffer.from(`${process.env.REACT_APP_IBM_KEY}`).toString(
       "base64"
     )
   );
@@ -373,12 +373,12 @@ const GenerateLink = () => {
   const TYPES = [
     {
       label: "Non 3DS",
-      apiKey: "R2V0dEdjRTI4OElfc3RZRkU2MUw5V01wQWp6VWhEUWg6",
+      apiKey: (`${process.env.REACT_APP_IBM_KEY}`),
       merchantID: "JP00000517",
     },
     {
       label: "Wallet Pay",
-      apiKey: "R2V0dEdjRTI4OElfc3RZRkU2MUw5V01wQWp6VWhEUWg6",
+      apiKey: (`${process.env.REACT_APP_IBM_KEY}`),
       merchantID: "JP00000549",
     },
     {
