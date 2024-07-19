@@ -383,7 +383,7 @@ const GenerateLink = () => {
     },
     {
       label: "3DS",
-      apiKey: "SnhMaFpCWEQzRzN5RkhMNDg2aERGMFB6blBUNG9ua3A6",
+      apiKey: (`${process.env.REACT_APP_IBM_KEY}`),
       merchantID: "MU00000482",
     },
   ];
